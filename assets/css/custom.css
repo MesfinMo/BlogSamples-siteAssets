@@ -1,0 +1,16 @@
+.yml .pln {
+    color: #0086B3;
+}
+.yml  .c-str .pln {
+    color: #EC7600;
+}
+.yml  .c-str  .com {
+    color: #EC7600;
+}
+
+.yml  .c-str  .kwd {
+    color: #EC7600;
+}
+.yml  .c-str  .pun {
+    color: #EC7600;
+}
