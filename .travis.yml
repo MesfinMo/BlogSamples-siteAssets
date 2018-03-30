@@ -1,0 +1,13 @@
+language: python
+python:
+  - "2.7"
+install: 
+  - bundle install
+  - pip install awscli
+script:
+  - bundle exec jekyll build
+after_success:
+  - aws s3 sync --delete ./_site/assets  s3://blog-samples-site-assets --cache-control max-age=604800
+branches:
+  only: 
+    - master
